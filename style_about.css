@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+a { text-decoration: none; color: inherit; }
+
+nav {
+  background: #310542;
+  color: white;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+}
+
+nav div {
+  display: inline-block;
+}
+
+@font-face {
+  font-family: Amasis;
+  src: url('./fonts/Amasis/AmasisMedium.ttf');
+}
+
+.nav_container {
+  width: 95vw;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.nav_image {
+  display: inline-block;
+  height: 50px;
+  width: auto;
+  line-height: 0;
+}
+
+
+.nav_search {
+  background: #461459;
+  border: 1px solid #8E8080;
+  color: white;
+  height: 42px;
+  width: 20vw;
+  border-radius: 10px;
+  margin-left: 25px;
+padding: 0px 0px 7px 10px;
+}
+.nav_search img { margin-top: 12px; margin-right: 5px; }
+
+.nav_search input { background: #461459; border: 0px; width: 17vw; color: white; height: 40px; position: relative; top: -3px; }
+
+.sub_container {
+  flex: 4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sub_container-title {
+  font-family: Amasis;
+}
+.second_sub_container {
+  flex: 4;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.third_sub_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1.5;
+}
+
+.sub_container-title { padding-left: 20px; font-size: 20px; }
+.nav_button {
+  background: #F0E9F2;
+  border: 1px solid #845099;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  font-size: 12.7px;
+}
+
+.nav_element {
+  display: inline-block;
+  margin-left: 20px;
+  border-bottom: 4px solid transparent;
+line-height: 70px; color: white;
+font: 12px/76px Open Sans;
+width: 85px;
+text-align: center;
+transition: 0.5s all ease-in-out;
+}
+
+.selected_item {
+  border-color: white;
+}
+
+.nav_element:hover { border-color: white; }
+
+.nav_newsletter { width: 100px; height: 80px;  }
+.nav_newsletter-hover { position: fixed; top: 80px; right: 100px;  width: 360px; background: #EAE3ED; padding: 40px; border-radius: 12px; opacity: 0; transition: 0.3s all ease-in-out; }
+.nav_newsletter-hover h2 { font-family: Open Sans;
+font-style: normal;
+font-size: 20px;
+line-height: 29px;
+color: #291630; margin: 0px; margin-bottom: 20px; }
+
+.nav_newsletter input { display: inline-block; }
+.newsletter_input { width: 180px; height: 45px; background: #FFFFFF; border-radius: 2px; border: 0px; display: inline-block; margin: 0px; padding: 10px; }
+.newsletter_button { width: 80px; height: 45px;
+background: #4C0767;
+border-radius: 0px 2px 2px 0px; display: inline-block; margin: 0px; font-family: Open Sans;
+font-style: normal;
+font-size: 10.8px;
+line-height: 45px; text-align: center; }
+
+
+.second_sub_container [type=checkbox] {
+  display: none;
+}
+
+.second_sub_container [type=checkbox]:checked + label {
+  border-color: white;
+}
+
+.second_sub_container [type=checkbox]:checked + label + .nav_newsletter-hover {
+  opacity: 1;
+}
+
+.jumbotron {
+  width: 100vw;
+  height: auto;
+  margin-top: 80px;
+}
+
+.main_content { background: #fcfcfc; padding: 10vw;
+font-family: Open Sans; }
+
+.main_footer {
+  background: #310542;
+  width: 100vw;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  color: #EDEDED;
+  font-size: 12.7px;
+  line-height: 17px;
+  font-family: Open Sans;
+}
+
+.main_footer p {
+  margin-bottom: 10px;
+}
+
+.footer_sub_container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.first_footer_container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_footer_container {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  border-left: 1px solid #631F7A;
+  border-right: 1px solid #631F7A;
+}
+
+.third_footer_container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.third_footer_container p { text-align: left; width: 70%;  }
+.footer_social_grouping { width: 70%; margin-top: 10px; }
+.footer_social_grouping a { margin-right: 5px; }
+
+.footer_nested_container { text-align: left; line-height: 30px;  }
+.footer_nested_container a { display: block; }
+
+.secondary_footer {
+  background: #260035;
+  color: #845099;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding: auto;
+  vertical-align: middle;
+}
+
+.secondary_footer p {
+  font-size: 10.8px;
+  line-height: 40px;
+}
+
+
+/*collapsible sections for About Us page*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: left;
+  margin-right: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
