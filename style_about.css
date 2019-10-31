@@ -216,6 +216,12 @@ font-family: Open Sans; }
   line-height: 40px;
 }
 
+.abt_us_title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  padding: 0 0 30px 0;
+  text-align: center;
+}
 
 /*collapsible sections for About Us page*/
 /* Style the buttons that are used to open and close the accordion panel */
@@ -229,6 +235,9 @@ font-family: Open Sans; }
   border: none;
   outline: none;
   transition: 0.4s;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -238,20 +247,21 @@ font-family: Open Sans; }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 30px 30px 30px 30px;
   background-color: white;
   display: none;
   overflow: hidden;
 }
 
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 2.2em;
   color: #777;
-  float: left;
+  float: right;
   margin-right: 5px;
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\0F1D"; /* Unicode character for "minus" sign (-) */
 }
