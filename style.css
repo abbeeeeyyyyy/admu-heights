@@ -27,7 +27,6 @@ nav div {
   height: 50px;
   width: auto;
   line-height: 0;
-  margin-left: -30px;
 } 
 
 .nav_input {
@@ -79,6 +78,8 @@ nav div {
 }
 
 .selected_item {
+  height: calc(100% - 1px);
+  border-collapse: collapse;
   border-bottom: 4px solid white;
   line-height: 70px;
 }
