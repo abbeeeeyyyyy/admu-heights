@@ -57,11 +57,31 @@ nav div {
   align-items: center;
 }
 
+.third_sub_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1.5;
+}
+
+.nav_button {
+  background: #F0E9F2;
+  border: 1px solid #845099;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  font-size: 12.7px;
+}
+
 .nav_element {
   display: inline-block;
   margin-left: 30px;
 }
 
+.selected_item {
+  border-bottom: 4px solid white;
+  line-height: 70px;
+}
 .nav_button {
   border-radius: 15px;
 }
@@ -79,6 +99,16 @@ nav div {
   justify-content: space-evenly;
   align-items: center;
   color: #EDEDED;
+  font-size: 12.7px;
+  line-height: 17px;
+}
+
+.main_footer p {
+  margin-bottom: 10px;
+}
+
+.footer_header_text {
+  font-weight: bold;
 }
 
 .footer_sub_container {
@@ -115,6 +145,10 @@ nav div {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.footer_social_grouping {
+  margin-top: 10px;
 }
 
 
