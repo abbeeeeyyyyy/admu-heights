@@ -6,71 +6,87 @@
   </head>
   <body>
     <nav>
-      <div class="container">
+      <div class="nav_container">
         <div class="sub_container">
           <div><img src="images/HEIGHTS-Logo-02.svg" class="nav_image"></div>
-          <div>HEIGHTS</div>
-          <div><input type="text" class="nav_input nav_element"></div>
+          <div class="sub_container-title">HEIGHTS</div>
+          <div class="nav_search"><img src="./images/search.png" /><input type="text" class="nav_input" placeholder="Search..."></div>
         </div>
         <div class="second_sub_container">
-          <div class="nav_element selected_item">Home</div>
-          <div class="nav_element">About Us</div>
-          <div class="nav_element">Our Works</div>
-          <div class="nav_element">Newsletter</div>
+          <a href="/" class="nav_element selected_item">Home</a>
+          <a href="/about" class="nav_element">About Us</a>
+          <a href="/works" class="nav_element">Our Works</a>
+
+          <input id="nav_news" type="checkbox" /><label for="nav_news" class="nav_element">Newsletter</label>
+            <div class="nav_newsletter-hover">
+              <h2>Get the best of Heights in your inbox weekly.</h2>
+              <input type="text" class="newsletter_input" placeholder="Enter your e-mail address"><div class="newsletter_button">Subscribe</div>
+            </div>
         </div>
         <div class="third_sub_container">
-          <button class="nav_button">Contribute</button>
+          <a href="/contribute"><button class="nav_button">Contribute</button></a>
         </div>
       </ul>
     </nav>
     <img src="images/jumbotron.png" class="jumbotron">
+
+
+    <section class="main_content">
+
+      main content here
+      <!-- main content here -->
+
+
+    </section>
+
+
     <footer class="main_footer">
       <div class="first_footer_container">
           <div><img src="images/HEIGHTS-Logo-02.svg" class="nav_image"></div>
-          <div>HEIGHTS</div>
+          <div class="sub_container-title">HEIGHTS</div>
       </div>
       <div class="second_footer_container">
         <div class="footer_sub_container">
           <div class="footer_nested_container">
             <p class="footer_header_text">About Us</p>
-            <p>Who we are</p>
-            <p>History</p>
-            <p>Projects</p>
+            <a>Who we are</a>
+            <a>History</a>
+            <a>Projects</a>
           </div>
         </div>
         <div class="footer_sub_container">
           <div class="footer_nested_container">
-            <p class="footer_header_text">Our works</p>
-            <p>Folios</p>
-            <p>News</p>
-            <p>Features</p>
+            <p class="footer_header_text">Our Works</p>
+            <a>Folios</a>
+            <a>News</a>
+            <a>Features</a>
           </div>
         </div>
         <div class="footer_sub_container">
           <div class="footer_nested_container">
             <p class="footer_header_text">Contribute</p>
-            <p>English works</p>
-            <p>Filipino works</p>
-            <p>Artworks</p>
+            <a>English works</a>
+            <a>Filipino works</a>
+            <a>Artworks</a>
           </div>
         </div>
         <div class="footer_sub_container">
           <div class="footer_nested_container">
-            <p class="footer_header_text">Contact Us</p>
+            <a class="footer_header_text">Contact Us</a>
           </div>
         </div>
       </div>
       <div class="third_footer_container">
         <p>FOLLOW US</p>
         <div class="footer_social_grouping">
-          <img src="images/facebook.png">
-          <img src="images/twitter.png">
-          <img src="images/instagram.png">
+          <a href="https://www.facebook.com/HeightsAteneo/"><img src="images/facebook.png"></a>
+          <a href="https://twitter.com/HeightsAteneo"><img src="images/twitter.png"></a>
+          <a href="https://www.instagram.com/heightsateneo/"><img src="images/instagram.png"></a>
         </div>
       </div>
     </footer>
     <div class="secondary_footer">
       <p>Copyright 2019 Ateneo Heights | Passionately made by User Experience Society</p>
-    </div>  
+    </div>
   </body>
 </html>
