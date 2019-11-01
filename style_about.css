@@ -225,19 +225,31 @@ font-family: Open Sans; }
 
 /*collapsible sections for About Us page*/
 /* Style the buttons that are used to open and close the accordion panel */
+
+.main_content {
+   background-color: #E5E5E5;
+}
+
+.abt_us_title {
+  font-family: Amasis;
+  font-weight: bold;
+  font-size: 1.5em;
+}
 .accordion {
-  background-color: #eee;
+  background-color: #FFFFFF;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 30px 20px 20px 20px;
   width: 100%;
   text-align: left;
-  border: none;
+  border-bottom: 0.1px rgba(0, 0, 0, 0.1);
+  border-right: none;
   outline: none;
   transition: 0.4s;
-
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
+
+  box-shadow: 1px 5px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -248,17 +260,27 @@ font-family: Open Sans; }
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   font-family: 'Open Sans', sans-serif;
-  padding: 30px 30px 30px 30px;
+  padding: 50px;
+  line-height: 2.2em;
   background-color: white;
   display: none;
   overflow: hidden;
+}
+
+.sub-heading {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+
+.sub-heading_history {
+  font-size: 1.2em;
 }
 
 .accordion:after {
   content: '+'; /* Unicode character for "plus" sign (+) */
   font-size: 2.2em;
   font-family: 'Open Sans', sans-serif;
-  color: #777;
+  color: rgba(0, 0, 0, 0.1);
   float: right;
   margin-right: 5px;
 }
@@ -266,4 +288,8 @@ font-family: Open Sans; }
 .active:after {
   content: "\0F1D"; /* Unicode character for "minus" sign (-) */
   font-family: 'Open Sans', sans-serif;
+}
+
+.panel_history {
+  padding: 0px;
 }
