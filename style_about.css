@@ -248,11 +248,14 @@ font-family: Open Sans; }
   transition: 0.4s;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 
   box-shadow: 1px 5px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
+.intro {
+  margin-bottom: 20px;
+}
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #ccc;
@@ -293,11 +296,33 @@ font-family: Open Sans; }
   font-family: 'Open Sans', sans-serif;
 }
 
-.panel_history {
-  padding: 0px;
+.history {
   margin: 0px;
 }
 
-.history {
-  margin: 0px;
+.h_main {
+  margin-bottom: 20px;
+}
+
+.history_last {
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+hr {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
