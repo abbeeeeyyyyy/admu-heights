@@ -257,6 +257,7 @@ font-family: Open Sans; }
 .accordion:after {
   content: '+'; /* Unicode character for "plus" sign (+) */
   font-size: 2.2em;
+  font-family: 'Open Sans', sans-serif;
   color: #777;
   float: right;
   margin-right: 5px;
@@ -264,4 +265,5 @@ font-family: Open Sans; }
 
 .active:after {
   content: "\0F1D"; /* Unicode character for "minus" sign (-) */
+  font-family: 'Open Sans', sans-serif;
 }
