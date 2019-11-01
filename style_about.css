@@ -324,6 +324,14 @@ hr {
   width: 600px;
 }
 
+.label_contact {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  padding-left: 10em;
+}
+
 input[type=text] {
   width: 100%;
   padding: 15px;
@@ -347,11 +355,6 @@ input[type=text] {
   width: 42.66%;
 }
 
-#subject {
-
-}
-
-
 #comment {
   padding-bottom: 300px;
 }
@@ -374,4 +377,13 @@ input[type=submit] {
 
 input[type=submit]:hover {
   opacity: 1;
+}
+
+.container_secondHalf {
+  display: inline-flex;
+  padding-left: 6%;
+}
+
+.ad {
+  padding-left: 80px;
 }
