@@ -37,6 +37,39 @@ nav div {
 /*collapsible sections for About Us page*/
 /* Style the buttons that are used to open and close the accordion panel */
 
+.heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  color: #2a0736;
+  margin-bottom: 30px;
+}
+
+.search_nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.option {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 25px;
+  padding-bottom: 0px;
+  margin-bottom: 25px;
+  
+  border-bottom: 3px solid;
+  border-bottom-color: transparent;
+  transition: border-bottom-color 0.1s linear 0s;
+}
+
+.option:not(.refine):hover {
+  border-bottom-color: #845099;
+}
 
 .result_cell {
   background-color: #FFFFFF;
