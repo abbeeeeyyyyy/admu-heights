@@ -87,7 +87,7 @@ nav div {
 }
 
 .main_search {
-  padding: 100px 200px 100px 200px;
+  padding: 200px 200px 100px 200px;
 }
 
 .result_cell {
@@ -101,8 +101,8 @@ nav div {
 
 .img_cell {
   padding: 35px 30px 35px 30px;
-  width: 25%;
-  height: 22%;
+  width: 32%;
+  height: 30%;
   flex-grow: 2;
 }
 
