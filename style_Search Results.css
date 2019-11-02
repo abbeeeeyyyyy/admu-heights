@@ -42,25 +42,39 @@ nav div {
   background-color: #FFFFFF;
   width: 100%;
   height: auto;
-  box-shadow: 1px 5px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.1);
   display: flex;   
+  margin-bottom: 20px;
 }
 
 .img_cell {
-  padding: 20px 20px 20px 20px;
+  padding: 35px 30px 35px 30px;
+  width: 25%;
+  height: 22%;
   flex-grow: 2;
 }
 
 .text_cell {
   flex-shrink: 4;
   flex-wrap: wrap;
-  padding: 20px 30px 20px 10px;
+  padding: 20px 100px 20px 0px;
+  line-height: 3em;
+
+  font-family: 'Open Sans', sans-serif;
 }
 
 .title {
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   color: #522464;
-  font-size: 2em;
+  font-size: 1.4em;
 }
-    
+
+.by-line {
+  opacity: 0.3;
+  font-size: 0.9em;
+}
+
+.preview_txt {
+  line-height: 1.7em;
+}
