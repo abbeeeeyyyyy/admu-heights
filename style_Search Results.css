@@ -40,7 +40,7 @@ nav div {
 .heading {
   font-family: 'Open Sans', sans-serif;
   font-size: 2em;
-  font-weight: 400;
+  font-weight: 600;
   color: #2a0736;
   margin-bottom: 30px;
 }
@@ -52,6 +52,7 @@ nav div {
   overflow: hidden;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
+  left: 100%;
 }
 
 .option {
@@ -65,10 +66,28 @@ nav div {
   border-bottom: 3px solid;
   border-bottom-color: transparent;
   transition: border-bottom-color 0.1s linear 0s;
+  transition: color 0.1s linear 0s;
 }
 
 .option:not(.refine):hover {
   border-bottom-color: #845099;
+  color:#845099;
+}
+
+.refine {
+  padding-left: 0px;
+}
+
+.showing_subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  opacity: 0.4;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.main_search {
+  padding: 100px 200px 100px 200px;
 }
 
 .result_cell {
@@ -110,4 +129,17 @@ nav div {
 
 .preview_txt {
   line-height: 1.7em;
+}
+
+.endOfPage_line {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.endOfPage > p {
+    text-align: center;
+    opacity: 0.3;
+    font-family: 'Open Sans', sans-serif;
 }
